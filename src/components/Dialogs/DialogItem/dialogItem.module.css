@@ -1,0 +1,9 @@
+.dialogsItem {
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.activeLink {
+  background-color: #cac7da3b;
+}
