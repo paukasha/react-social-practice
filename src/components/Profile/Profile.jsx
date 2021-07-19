@@ -2,16 +2,18 @@ import React from 'react';
 import styles from './profile.module.css';
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import MyPostsContainer from "./MyPosts/MyPostsContainer";
+import Preloader from "../common/Preloader/Preloader";
 
 
 
-const Profile = () => {
+const Profile = (props) => {
+
   return (
     <div className={styles.profile}>
       <img className={styles.profileBackground}
            src="https://content.skyscnr.com/m/1b51182679225810/original/GettyImages-147444574_doc.jpg?resize=1800px:1800px&quality=100"
            alt='background'/>
-        <ProfileInfo />
+        <ProfileInfo profile={props.profile}/>
         <MyPostsContainer />
     </div>
   )

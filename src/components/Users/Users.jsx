@@ -1,36 +1,40 @@
 import React from 'react';
 import styles from './users.module.css';
-import axios from 'axios';
 import userPhoto from '../../assets/images/user.png';
+import {NavLink} from 'react-router-dom';
 
-class Users extends React.Component{
+const Users = (props) => {
+  let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
 
-  componentDidMount() {
-    axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => {
-      this.props.setUsers(response.data.items)
-    })
+  let pages = [];
+
+  for (let i = 1; i <= pagesCount; i++) {
+    pages.push(i)
   }
+  return (
+    <div>
+      {pages.map(p => {
+        return <button className={props.currentPage === p && styles.selectedPage}
+                       onClick={(e) => {
+                         props.onPageChanged(p)
+                       }}>
+          {p}
+        </button>
+      })}
 
-  render() {
-    return <div>
-      <div>
-        <span>1</span>
-        <span className={styles.selectedPage}>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>5</span>
-    </div>
       <ul className={styles.user}>
         {
-          this.props.users.map(u => <li className={styles.userItem} key={u.id}>
+          props.users.map(u => <li className={styles.userItem} key={u.id}>
             <div className={styles.userItemLeft}>
-              <img src={u.photos.small != null ? u.photos.small : userPhoto} className={styles.userImg}/>
+              <NavLink to={'/profile/' + u.id}>
+                <img src={u.photos.small != null ? u.photos.small : userPhoto} className={styles.userImg}/>
+              </NavLink>
               {u.followed
                 ? <button onClick={() => {
-                  this.props.follow(u.id)
+                  props.follow(u.id)
                 }} className={styles.userImgBtn}>follow</button>
                 : <button onClick={() => {
-                  this.props.unfollow(u.id)
+                  props.unfollow(u.id)
                 }} className={styles.userImgBtn}>unFollow</button>
               }
             </div>
@@ -45,7 +49,7 @@ class Users extends React.Component{
         }
       </ul>
     </div>
-  }
+  )
 }
 
 export default Users;
