@@ -4,8 +4,16 @@
   display: flex;
   align-items: center;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .header img {
   width: 60px;
+}
+
+.loginLink {
+  color: #333;
+  font-weight: bold;
 }

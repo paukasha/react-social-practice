@@ -10,13 +10,13 @@ let initialState = {
   pageSize: 5,
   totalUsersCount: 0,
   currentPage: 1,
-  isFetching: false
+  isFetching: true
 };
 
 
 const usersReducer = (state = initialState, action) => {
   switch (action.type) {
-    case FOLLOW:
+    case FOLLOW: {
       return {
         ...state,
         users: state.users.map(u => {
@@ -26,8 +26,9 @@ const usersReducer = (state = initialState, action) => {
           return u;
         })
       }
+    }
 
-    case UN_FOLLOW:
+    case UN_FOLLOW: {
       return {
         ...state,
         users: state.users.map(u => {
@@ -37,6 +38,7 @@ const usersReducer = (state = initialState, action) => {
           return u;
         })
       }
+    }
 
     case SET_USERS:
       return {
@@ -55,6 +57,7 @@ const usersReducer = (state = initialState, action) => {
         ...state,
         totalUsersCount: action.count
       }
+
     case  TOGGLE_IS_FETCHING:
       return {
         ...state,
@@ -67,9 +70,9 @@ const usersReducer = (state = initialState, action) => {
 }
 
 
-export const follow = (userId) => ({type: FOLLOW, userId});
+export let follow = (userId) => ({type: FOLLOW, userId});
 
-export const unFollow = (userId) => ({type: UN_FOLLOW, userId});
+export let unfollow = (userId) => ({type: UN_FOLLOW, userId});
 
 export const setUsers = (users) => ({type: SET_USERS, users});
 
