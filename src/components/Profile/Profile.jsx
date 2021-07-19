@@ -5,9 +5,7 @@ import MyPostsContainer from "./MyPosts/MyPostsContainer";
 
 
 
-const Profile = (props) => {
-  // console.log(props)
-
+const Profile = () => {
   return (
     <div className={styles.profile}>
       <img className={styles.profileBackground}
