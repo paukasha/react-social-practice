@@ -3,6 +3,7 @@ import styles from './users.module.css';
 import userPhoto from '../../assets/images/user.png';
 import {NavLink} from 'react-router-dom';
 import axios from "axios";
+import {usersAPI} from "../../api/api";
 
 const Users = (props) => {
 // debugger
@@ -17,7 +18,7 @@ const Users = (props) => {
     <div>
       {pages.map(p => {
         return <button className={props.currentPage === p && styles.selectedPage}
-                       onClick={(e) => {
+                       onClick={() => {
                          props.onPageChanged(p)
                        }}>
           {p}
@@ -29,40 +30,14 @@ const Users = (props) => {
           props.users.map(u => <li className={styles.userItem} key={u.id}>
             <div className={styles.userItemLeft}>
               <NavLink to={'/profile/' + u.id}>
-                <img src={u.photos.small != null ? u.photos.small : userPhoto} className={styles.userImg}/>
+                <img src={u.photos.small != null ? u.photos.small : userPhoto} className={styles.userImg} alt='small'/>
               </NavLink>
-              {u.followed
-                ? <button onClick={() => {
-                  axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,  {
-                    withCredentials: true,
-                    headers: {
-                      'API-KEY' : 'e9bb7575-f3f2-43a8-ae9c-91b6f34b931d'
-                    }
-                  })
-                    .then(response => {
-                      if (response.data.resultCode == 0) {
-                        props.unfollow(u.id)
-                      }
-
-                    })
-                }}
+              { u.followed
+                ? <button disabled={props.followingInProgress.some(id=> id===u.id)}
+                          onClick={() => {props.unfollow(u.id)}}
                           className={styles.userImgBtn}>unFollow</button>
-                : <button onClick={() => {
-                  axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`, {}, {
-                    withCredentials: true,
-                    headers: {
-                      'API-KEY' : 'e9bb7575-f3f2-43a8-ae9c-91b6f34b931d'
-                    }
-                  })
-                    .then(response => {
-                     if (response.data.resultCode == 0) {
-                       props.follow(u.id)
-                     }
-
-                  })
-
-
-                }}
+                : <button disabled={props.followingInProgress.some(id=> id===u.id)}
+                          onClick={() => {props.follow(u.id)}}
                           className={styles.userImgBtn}>follow</button>
               }
             </div>
