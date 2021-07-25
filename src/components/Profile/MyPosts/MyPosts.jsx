@@ -1,6 +1,28 @@
 import React from 'react';
 import styles from './myPosts.module.css';
 import Post from "./Post/Post";
+import {Field, reduxForm} from "redux-form";
+import {maxLengthCreator, required} from "../../../utils/validators/validators";
+import {Input} from "../../common/FormsControls/FormsControls";
+let maxlength50 = maxLengthCreator(50);
+
+
+let AddNewPostForm = (props) => {
+  // debugger
+  return (
+    <form onSubmit={props.handleSubmit}
+          className={styles.newPost}>
+      <Field name='newPostText'
+             component={Input}
+             placeholder='Post message'
+             validate={[required, maxlength50]}
+            />
+      <button className={styles.addPost}>Add</button>
+    </form>
+  )
+}
+
+let AddNewPostFormRedux = reduxForm({form: 'ProfileAddNewPostForm'})(AddNewPostForm);
 
 const MyPosts = (props) => {
 
@@ -8,35 +30,20 @@ const MyPosts = (props) => {
     return <Post message={post.post} like={post.likesCount}/>
   })
 
-  let newPostElement = React.createRef();
-
-  let onAddPost = () => {
-    props.addPost();
-  }
-
-  let onPostChange = () => {
-    let text = newPostElement.current.value;
-    props.updateNewPostText(text);
-    // let action = updateNewpostTextActionCreator(text);
-    // props.dispatch(action);
+  let onAddPost = (values) => {
+    props.addPost(values.newPostText);
   }
 
   return (
     <div className={styles.posts}>
       <span className={styles.postsText}>My posts</span>
-      <div className={styles.newPost}>
-        <input className={styles.inputPost}
-               onChange={onPostChange}
-               ref={newPostElement}
-               value={props.newPostText}
-        />
-        <button className={styles.addPost} onClick={onAddPost}>Add</button>
-      </div>
+      <AddNewPostFormRedux onSubmit={onAddPost}/>
       <ul className={styles.allPost}>
         {postsElements}
       </ul>
     </div>
   )
 }
+
 
 export default MyPosts;

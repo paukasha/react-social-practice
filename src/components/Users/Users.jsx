@@ -2,11 +2,8 @@ import React from 'react';
 import styles from './users.module.css';
 import userPhoto from '../../assets/images/user.png';
 import {NavLink} from 'react-router-dom';
-import axios from "axios";
-import {usersAPI} from "../../api/api";
 
 const Users = (props) => {
-// debugger
   let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
 
   let pages = [];
@@ -44,7 +41,7 @@ const Users = (props) => {
             <div className={styles.userItemRight}>
               <div className={styles.userItemInfo}>
                 <span className={styles.fullName}>{u.name}</span>
-                <span className={styles.status}>{u.status != null ? u.status : 'Hello, i am using a whatsapp'}</span>
+                <span className={styles.status}>{u.status != null ? u.status : u.status}</span>
               </div>
               <div className={styles.userItemLocation}>{'u.location.country'}<br/>{'u.location.city'}</div>
             </div>
