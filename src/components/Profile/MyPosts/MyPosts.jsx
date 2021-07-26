@@ -4,6 +4,7 @@ import Post from "./Post/Post";
 import {Field, reduxForm} from "redux-form";
 import {maxLengthCreator, required} from "../../../utils/validators/validators";
 import {Input} from "../../common/FormsControls/FormsControls";
+
 let maxlength50 = maxLengthCreator(50);
 
 
@@ -24,9 +25,9 @@ let AddNewPostForm = (props) => {
 
 let AddNewPostFormRedux = reduxForm({form: 'ProfileAddNewPostForm'})(AddNewPostForm);
 
-const MyPosts = (props) => {
+const MyPosts = React.memo(props => {
 
-  let postsElements = props.posts.map(post => {
+  let postsElements = [...props.posts].reverse().map(post => {
     return <Post message={post.post} like={post.likesCount}/>
   })
 
@@ -43,7 +44,7 @@ const MyPosts = (props) => {
       </ul>
     </div>
   )
-}
+});
 
 
 export default MyPosts;
