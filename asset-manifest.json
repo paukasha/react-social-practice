@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-study/static/css/main.d9cce41a.chunk.css",
+    "main.js": "/react-study/static/js/main.b5b17889.chunk.js",
+    "main.js.map": "/react-study/static/js/main.b5b17889.chunk.js.map",
+    "runtime-main.js": "/react-study/static/js/runtime-main.2fa9d3bf.js",
+    "runtime-main.js.map": "/react-study/static/js/runtime-main.2fa9d3bf.js.map",
+    "static/js/2.571a60a5.chunk.js": "/react-study/static/js/2.571a60a5.chunk.js",
+    "static/js/2.571a60a5.chunk.js.map": "/react-study/static/js/2.571a60a5.chunk.js.map",
+    "static/js/3.3ce4f344.chunk.js": "/react-study/static/js/3.3ce4f344.chunk.js",
+    "static/js/3.3ce4f344.chunk.js.map": "/react-study/static/js/3.3ce4f344.chunk.js.map",
+    "index.html": "/react-study/index.html",
+    "static/css/main.d9cce41a.chunk.css.map": "/react-study/static/css/main.d9cce41a.chunk.css.map",
+    "static/js/2.571a60a5.chunk.js.LICENSE.txt": "/react-study/static/js/2.571a60a5.chunk.js.LICENSE.txt",
+    "static/media/Spinner-1s-200px.93ad5c12.svg": "/react-study/static/media/Spinner-1s-200px.93ad5c12.svg",
+    "static/media/logo.6ce24c58.svg": "/react-study/static/media/logo.6ce24c58.svg",
+    "static/media/user.e8348d6f.png": "/react-study/static/media/user.e8348d6f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2fa9d3bf.js",
+    "static/js/2.571a60a5.chunk.js",
+    "static/css/main.d9cce41a.chunk.css",
+    "static/js/main.b5b17889.chunk.js"
+  ]
+}
