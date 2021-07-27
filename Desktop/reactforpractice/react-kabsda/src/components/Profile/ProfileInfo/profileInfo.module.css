@@ -1,0 +1,15 @@
+.userProfile {
+  display: flex;
+  padding: 20px;
+}
+
+.profileImg {
+  display: block;
+  border: 5px;
+  width: 80px;
+  object-fit: cover;
+}
+
+.userProfileInfo {
+  padding: 10px;
+}
