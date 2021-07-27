@@ -19,7 +19,6 @@ it('new post should be added', () => {
 });
 
 it('after deleting length', () => {
-  //stest data
   let action = deletePost(1);
 
 //action

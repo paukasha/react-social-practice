@@ -5,10 +5,7 @@ import {getStatus, getUserProfile, updateStatus} from "../../redux/profileReduce
 import {withRouter} from "react-router-dom";
 import {compose} from "redux";
 
-
-
 class ProfileContainer extends React.Component {
-
   componentDidMount() {
     let userId = this.props.match.params.userId;
     if (!userId) {
@@ -25,6 +22,7 @@ class ProfileContainer extends React.Component {
 
     return (
       <Profile {...this.props}
+        users={this.props.users}
                profile={this.props.profile}
                status={this.props.status}
                updateStatus={this.props.updateStatus}/>
@@ -35,7 +33,8 @@ let mapStateToProps = (state) => ({
   profile: state.profilePage.profile,
   status: state.profilePage.status,
   authorizedUserId: state.auth.userId,
-  isAuth: state.auth.isAuth
+  isAuth: state.auth.isAuth,
+
 })
 
 export default compose(

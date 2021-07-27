@@ -29,6 +29,7 @@ let store = {
     },
     sidebar: {}
   },
+
   _callSubscriber() {
     console.log('state was changed')
   },
@@ -36,6 +37,7 @@ let store = {
   getState() {
     return this._state;
   },
+
   subscribe(observer) {
     this._callSubscriber = observer
   },
@@ -50,6 +52,7 @@ let store = {
     this._state.profilePage.newPostText = '';
     this._callSubscriber(this._state);
   },
+
   updateNewPostText(newText) {
     this._state.profilePage.newPostText = newText;
     this._callSubscriber(this._state)
@@ -61,8 +64,7 @@ let store = {
     this._state.sidebarPage = sidebarReducer(this._state.sidebarPage, action)
     this._callSubscriber(this._state)
   }
-
-}
+};
 
 window.store = store;
 export default store;

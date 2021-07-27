@@ -4,7 +4,6 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import MyPostsContainer from "./MyPosts/MyPostsContainer";
 
 const Profile = (props) => {
-
   return (
     <div className={styles.profile}>
       <img className={styles.profileBackground}
@@ -14,6 +13,6 @@ const Profile = (props) => {
         <MyPostsContainer />
     </div>
   )
-}
+};
 
 export default Profile;
