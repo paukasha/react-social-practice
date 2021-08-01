@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from "./Header";
 import {connect} from "react-redux";
 import {logout} from "../../redux/authReducer";
+import Navbar from "./Navbar";
 
-class HeaderContainer extends React.Component {
+class NavbarContainer extends React.Component {
   render () {
     return (
-     <Header {...this.props} />
+      <Navbar {...this.props} />
     )
   }
 }
@@ -16,4 +16,4 @@ const mapStateToProps = (state) => ({
   login: state.auth.login
 });
 
-export default connect(mapStateToProps, {logout})(HeaderContainer);
+export default connect(mapStateToProps, {logout})(NavbarContainer);

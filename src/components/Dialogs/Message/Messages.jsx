@@ -5,6 +5,6 @@ const Messages = (props) => {
   return (
     <li className={styles.messagesItem}>{props.message}</li>
   )
-}
+};
 
 export default Messages;

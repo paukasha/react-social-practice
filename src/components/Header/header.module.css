@@ -1,16 +1,56 @@
 .header {
   grid-area: header;
-  background-color: rgba(192, 225, 192, 0.5);
+  background-color:#fff;
   display: flex;
   align-items: center;
   padding: 10px;
-  display: flex;
   justify-content: space-between;
-
+  box-shadow: 0 0 4px #d8cdcda1;
+  z-index: 20;
 }
 
-.header img {
-  width: 60px;
+.headerLogo {
+  padding: 10px;
+  border: 2px solid rgba(0,0,0,0.4);
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #8757df;
+  text-shadow: 3px 2px 3px rgba(136, 136, 136, 0.5);
+  cursor: pointer;
+}
+
+.ad {
+  max-width: 500px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-color: #8757df;
+  padding: 20px 100px;
+  color: #fff;
+}
+
+.search {
+  width: 300px;
+  position: relative;
+}
+
+.searchImg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.headerSearch {
+  border-radius: 2px;
+  outline: none;
+  width: 100%;
+  padding: 10px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .loginLink {

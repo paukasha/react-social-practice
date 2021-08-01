@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
+import styles from './profileStatus.module.css';
 
 const ProfileStatusWithHooks = (props) => {
-
-
   let [editMode, setEditMode] = useState(false);
   let [status, setStatus] = useState(props.status);
 
@@ -24,19 +23,18 @@ const ProfileStatusWithHooks = (props) => {
   }
 
   return (
-    <div>
+    <div className={styles.status}>
       {!editMode &&
-      <span onDoubleClick={activateEditMode}>{props.status || "-----"}</span>
-      }
+     <span className={styles.statusTitle} onDoubleClick={activateEditMode}>Status: <span className={styles.statusDescr}>{props.status || "-----"}</span></span>}
+
       {editMode &&
       <input autoFocus={true}
              onBlur={deactivateEditMode}
              onChange={onStatusChange}
-      value={status}/>
+             value={status}/>
       }
     </div>
   )
-}
-
+};
 
 export default ProfileStatusWithHooks;

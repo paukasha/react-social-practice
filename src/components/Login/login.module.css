@@ -1,5 +1,36 @@
-
 .formSummaryError {
   border: 1px solid red;
   color: red;
+}
+
+.login {
+  padding: 20px;
+}
+
+.loginTitle {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.testData {
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #8757df;
+}
+
+.testTitle {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.testLogin {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.testLoginText {
+  font-weight: normal;
+  padding-left: 10px;
 }

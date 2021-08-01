@@ -4,6 +4,7 @@ import Paginator from "../common/Paginator/Paginator";
 import User from "./User";
 
 const Users = ({currentPage, onPageChanged, totalItemsCount, pageSize, users, ...props}) => {
+  // debugger
   return (
     <div>
       <Paginator currentPage={currentPage}

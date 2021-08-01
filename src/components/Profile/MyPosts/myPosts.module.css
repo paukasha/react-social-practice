@@ -1,18 +1,19 @@
-.posts {
-  padding: 20px;
+.newPost {
+  display: flex;
+  position: relative;
+  width: 500px;
 }
 
-.allPost {
+.posts {
   padding: 20px;
 }
 
 .postsText {
   display: block;
   margin-bottom: 20px;
-}
-
-.newPost {
-  display: flex;
+  color: #8757df;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .inputPost {
@@ -27,20 +28,6 @@
 }
 
 .addPost {
-  display: block;
+  border-radius: 0;
   width: 80px;
-  height: 40px;
-  border: none;
-  outline: none;
-  padding: 10px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.9);
-  cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.addPost:hover {
-  color: white;
-  background: rgba(0, 0, 0, 0.7);
-  transition: background 0.3s ease, color 0.3s ease;
 }

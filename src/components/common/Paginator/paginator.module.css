@@ -1,22 +1,26 @@
-.selectedPage {
-  font-weight: bold;
+.paginator {
+  padding: 10px;
 }
 
 .noSelectedPage {
   border: 1px solid red;
 }
 
-
 .paginator {
   margin: 10px;
 }
 
 .pageNumber {
-  padding: 2px;
-  border: 1px solid grey;
+  padding: 0;
+  background-color: transparent;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  font-size: 12px;
 }
 
 .pageNumber.selectedPage {
-  font-weight: bold;
-  border-color: black;
+  background-color: #8757df;
+  color: #fff;
 }

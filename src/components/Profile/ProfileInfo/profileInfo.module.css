@@ -1,15 +1,79 @@
 .userProfile {
-  display: flex;
+  border-right: 2px solid rgba(255, 255, 255, 0.7);
+  max-width: 40%;
   padding: 20px;
+}
+
+.userProfileTop {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.userProfileImage {
+  max-width: 150px;
+  text-align: center;
 }
 
 .profileImg {
   display: block;
   border: 5px;
-  width: 80px;
   object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.forInputFile {
+  cursor: pointer;
+}
+
+.inputFileText {
+  font-size: 14px;
+}
+
+.userProfileInputFile {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
 }
 
 .userProfileInfo {
-  padding: 10px;
+  padding: 10px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
 }
+
+.fullName {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #8757df;
+}
+
+.contactBlock {
+  margin-bottom: 15px;
+}
+
+.contactTitle {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contactDescr {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.contactItem {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contactTitleItem {
+  padding-right: 5px;
+}
+
+
+
+

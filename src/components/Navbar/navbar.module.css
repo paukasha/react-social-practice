@@ -1,7 +1,22 @@
 .nav {
   grid-area: nav;
-  background-color: #10acb180;
+  background-color: #8757df;
   padding: 10px;
+}
+
+.loginBlock {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.isAuthBtn {
+  background-color: transparent;
+  color: #fff;
+  font-size: 12px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .navList {
@@ -19,4 +34,9 @@
 
 .activeLink {
   color: #fff;
+}
+
+.disabledLink {
+  pointer-events: none;
+  opacity: 0.3;
 }

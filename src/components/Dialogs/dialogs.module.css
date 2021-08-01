@@ -1,3 +1,16 @@
+.newMessageBlock {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sendNewMessageBtn {
+  border: none;
+  border-radius: 0;
+  outline: none;
+  width: 80px;
+  height: 40px;
+}
+
 .dialogs {
   display: grid;
   grid-template-columns: 2fr 10fr;
@@ -7,18 +20,10 @@
   padding: 0 10px;
 }
 
-
-
-
-
 .messages {
   padding: 0 10px;
-}
-
-
-.newMessageBlock {
-  display: flex;
-  align-items: flex-start;
+  height: 300px;
+  overflow-y: auto;
 }
 
 .newMessageText {
@@ -30,18 +35,8 @@
   margin-right: 20px;
 }
 
-.sendNewMessageBtn {
-  border: none;
-  outline: none;
-  width: 80px;
-  height: 40px;
-  cursor: pointer;
-  background-color: #fff;
-  transition: background-color 0.3s ease, color 0.3s ease;
+.messagesBlock {
+  padding: 20px 10px;
 }
 
-.sendNewMessageBtn:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  color:#fff;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+

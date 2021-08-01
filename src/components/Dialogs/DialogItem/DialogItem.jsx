@@ -9,6 +9,6 @@ const DialogItem = (props) => {
       <NavLink to={path} activeClassName={styles.activeLink}>{props.name}</NavLink>
     </li>
   )
-}
+};
 
 export default DialogItem;

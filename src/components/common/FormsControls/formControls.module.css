@@ -1,17 +1,45 @@
-.inputPost {
-  margin-right: 10px;
+.textareaBlock {
+  display: flex;
   width: 500px;
+  height: 80px;
+}
+
+.textareaPost {
+  outline: none;
+  border: none;
+  resize: none;
+  width: 100%;
+  padding: 10px;
+}
+
+.addPost {
+  border-radius: 0;
+  width: 80px;
+}
+
+.login {
+  margin-bottom: 20px;
+}
+
+.inputPost {
+  width: 240px;
   height: 40px;
   outline: none;
   border: 1px solid transparent;
   padding: 10px;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.9);
 }
 
 .error {
   border: 1px solid red;
+}
 
+.rememberCheckbox {
+  margin-bottom: 20px;
+}
+
+.editForm {
+  padding: 20px 0;
 }
 
 .textError {
@@ -20,4 +48,10 @@
   font-weight: bold;
   color: red;
   padding: 5px 0;
+  position: relative;
 }
+
+
+
+
+

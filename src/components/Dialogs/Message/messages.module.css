@@ -1,3 +1,8 @@
 .messagesItem {
   cursor: pointer;
+  padding: 10px;
+}
+
+.messagesItem:first-child {
+  padding-top: 0;
 }

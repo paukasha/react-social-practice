@@ -1,6 +1,47 @@
-
-
 .allPostItem {
-
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
 }
 
+.postTop {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.postImage {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.postTopText span {
+  display: block;
+}
+
+.postTitleGroup {
+  font-weight: bold;
+}
+
+.postTimeAppear {
+  font-size: 12px;
+}
+
+.postTextAdded {
+  font-size: 14px;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+
+.likeImage {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 10px;
+}
