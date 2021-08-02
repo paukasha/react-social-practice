@@ -43,8 +43,8 @@ const Login = (props) => {
       <h1 className={styles.loginTitle}>Login</h1>
       <div className={styles.testData}>
         <div className={styles.testTitle}>For testing app use:</div>
-        <div className={styles.testLogin}>Login:<span className={styles.testLoginText}>free@samuraijs.com</span></div>
-        <div className={styles.testLogin}>Password:<span className={styles.testLoginText}>free</span></div>
+        <div className={styles.testLogin}>Login:<span className={styles.testLoginText}>for.test.reactapp@mail.ru</span></div>
+        <div className={styles.testLogin}>Password:<span className={styles.testLoginText}>freepassword</span></div>
       </div>
       <LoginReduxForm onSubmit={onSubmit} captchaUrl={props.captchaUrl}/>
     </div>

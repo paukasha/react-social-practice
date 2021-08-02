@@ -12,17 +12,14 @@ import {withSuspense} from "./hoc/WithSuspense";
 import store from "./redux/reduxStore";
 import NavbarContainer from "./components/Navbar/NavbarContainer";
 import Header from "./components/Header/Header";
-import Login from "./components/Login/Login";
 
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 
 class App extends Component {
-
   componentDidMount() {
     this.props.initializeApp();
   }
-
 
   render() {
     if (!this.props.initialized) return <Preloader/>
@@ -62,7 +59,6 @@ const AppContainer = compose(
   connect(mapStateToProps, {initializeApp}))(App);
 
 const ReactApp = (props) => {
-  // debugger
   return <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Provider store={store}>
       <AppContainer/>

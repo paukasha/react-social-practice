@@ -5,9 +5,9 @@ import {NavLink} from 'react-router-dom';
 
 const UserPhoto = ({user}) => {
   return (
-          <NavLink to={'/profile/' + user.id}>
-            <img src={user.photos.small != null ? user.photos.small : userPhoto} className={styles.userImg} alt='small'/>
-          </NavLink>
+    <NavLink to={'/profile/' + user.id}>
+      <img src={user.photos.small != null ? user.photos.small : userPhoto} className={styles.userImg} alt='small'/>
+    </NavLink>
   )
 }
 

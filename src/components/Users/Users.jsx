@@ -4,7 +4,6 @@ import Paginator from "../common/Paginator/Paginator";
 import User from "./User";
 
 const Users = ({currentPage, onPageChanged, totalItemsCount, pageSize, users, ...props}) => {
-  // debugger
   return (
     <div>
       <Paginator currentPage={currentPage}
@@ -13,8 +12,7 @@ const Users = ({currentPage, onPageChanged, totalItemsCount, pageSize, users, ..
                  pageSize={pageSize}
       />
       <ul className={styles.user}>
-        {
-          users.map(u => <User user={u}
+        {users.map(u => <User user={u}
                                key={u.id}
                                followingInProgress={props.followingInProgress}
                                unfollow={props.unfollow}

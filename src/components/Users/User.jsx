@@ -17,13 +17,13 @@ const User = ({user, followingInProgress, unfollow, follow}) => {
                     onClick={() => {
                       follow(user.id)
                     }}
-                   >follow</button>
-        }
+                   >follow</button>}
       </div>
       <div className={styles.userItemRight}>
         <div className={styles.userItemInfo}>
           <span className={styles.fullName}>{user.name}</span>
-          <span className={styles.status}>{user.status != null ? user.status : 'Hello there i am using whatsapp :)'}</span>
+          <span className={styles.status}>{user.status != null ? user.status : 'Hello there i am using whatsapp :)'}
+          </span>
         </div>
       </div>
     </li>
