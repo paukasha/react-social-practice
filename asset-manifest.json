@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/react-social-practice/static/css/main.f9bbffc3.chunk.css",
-    "main.js": "/react-social-practice/static/js/main.2631cee3.chunk.js",
-    "main.js.map": "/react-social-practice/static/js/main.2631cee3.chunk.js.map",
-    "runtime-main.js": "/react-social-practice/static/js/runtime-main.9308c19d.js",
-    "runtime-main.js.map": "/react-social-practice/static/js/runtime-main.9308c19d.js.map",
-    "static/js/2.11cb3727.chunk.js": "/react-social-practice/static/js/2.11cb3727.chunk.js",
-    "static/js/2.11cb3727.chunk.js.map": "/react-social-practice/static/js/2.11cb3727.chunk.js.map",
+    "main.css": "/react-social-practice/static/css/main.3d5e54f9.chunk.css",
+    "main.js": "/react-social-practice/static/js/main.397e9ccf.chunk.js",
+    "main.js.map": "/react-social-practice/static/js/main.397e9ccf.chunk.js.map",
+    "runtime-main.js": "/react-social-practice/static/js/runtime-main.ec13d17a.js",
+    "runtime-main.js.map": "/react-social-practice/static/js/runtime-main.ec13d17a.js.map",
+    "static/js/2.74fdcdb4.chunk.js": "/react-social-practice/static/js/2.74fdcdb4.chunk.js",
+    "static/js/2.74fdcdb4.chunk.js.map": "/react-social-practice/static/js/2.74fdcdb4.chunk.js.map",
     "static/css/3.49225f44.chunk.css": "/react-social-practice/static/css/3.49225f44.chunk.css",
     "static/js/3.84efa92b.chunk.js": "/react-social-practice/static/js/3.84efa92b.chunk.js",
     "static/js/3.84efa92b.chunk.js.map": "/react-social-practice/static/js/3.84efa92b.chunk.js.map",
     "static/css/4.83644159.chunk.css": "/react-social-practice/static/css/4.83644159.chunk.css",
-    "static/js/4.f3814a66.chunk.js": "/react-social-practice/static/js/4.f3814a66.chunk.js",
-    "static/js/4.f3814a66.chunk.js.map": "/react-social-practice/static/js/4.f3814a66.chunk.js.map",
+    "static/js/4.62b7e848.chunk.js": "/react-social-practice/static/js/4.62b7e848.chunk.js",
+    "static/js/4.62b7e848.chunk.js.map": "/react-social-practice/static/js/4.62b7e848.chunk.js.map",
     "static/js/5.4c1b7ede.chunk.js": "/react-social-practice/static/js/5.4c1b7ede.chunk.js",
     "static/js/5.4c1b7ede.chunk.js.map": "/react-social-practice/static/js/5.4c1b7ede.chunk.js.map",
     "index.html": "/react-social-practice/index.html",
     "static/css/3.49225f44.chunk.css.map": "/react-social-practice/static/css/3.49225f44.chunk.css.map",
     "static/css/4.83644159.chunk.css.map": "/react-social-practice/static/css/4.83644159.chunk.css.map",
-    "static/css/main.f9bbffc3.chunk.css.map": "/react-social-practice/static/css/main.f9bbffc3.chunk.css.map",
-    "static/js/2.11cb3727.chunk.js.LICENSE.txt": "/react-social-practice/static/js/2.11cb3727.chunk.js.LICENSE.txt",
+    "static/css/main.3d5e54f9.chunk.css.map": "/react-social-practice/static/css/main.3d5e54f9.chunk.css.map",
+    "static/js/2.74fdcdb4.chunk.js.LICENSE.txt": "/react-social-practice/static/js/2.74fdcdb4.chunk.js.LICENSE.txt",
     "static/media/Spinner-1s-200px.93ad5c12.svg": "/react-social-practice/static/media/Spinner-1s-200px.93ad5c12.svg",
     "static/media/forpost.19108967.jpg": "/react-social-practice/static/media/forpost.19108967.jpg",
     "static/media/postimageadded.dd6dfcb4.jpg": "/react-social-practice/static/media/postimageadded.dd6dfcb4.jpg",
@@ -27,9 +27,9 @@
     "static/media/user.png": "/react-social-practice/static/media/user.e8348d6f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9308c19d.js",
-    "static/js/2.11cb3727.chunk.js",
-    "static/css/main.f9bbffc3.chunk.css",
-    "static/js/main.2631cee3.chunk.js"
+    "static/js/runtime-main.ec13d17a.js",
+    "static/js/2.74fdcdb4.chunk.js",
+    "static/css/main.3d5e54f9.chunk.css",
+    "static/js/main.397e9ccf.chunk.js"
   ]
 }
